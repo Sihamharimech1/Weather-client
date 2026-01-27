@@ -33,7 +33,7 @@ export default function App() {
     setLoading(true);
     try {
       const today = new Date().toISOString().split("T")[0];
-      const res = await fetch("http://192.168.100.192:5000/predict", {
+      const res = await fetch("http://adresseIp/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         // DYNAMIC: Passing the city name to the backend ML model
